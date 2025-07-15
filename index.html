@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malla Curricular - Ingeniería de Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Malla Curricular - Ingeniería de Alimentos</h1>
+        <div class="controls">
+            <button id="zoom-in">Zoom +</button>
+            <button id="zoom-out">Zoom -</button>
+            <button id="reset">Reset</button>
+            <div class="search-container">
+                <input type="text" id="course-search" placeholder="Buscar curso...">
+                <button id="search-btn">Buscar</button>
+            </div>
+        </div>
+        <div id="malla-container"></div>
+        <div id="course-info" class="hidden">
+            <h2 id="course-title"></h2>
+            <p id="course-code"></p>
+            <p id="course-credits"></p>
+            <div id="prerequisites">
+                <h3>Prerrequisitos:</h3>
+                <ul id="prereq-list"></ul>
+            </div>
+            <div id="required-by">
+                <h3>Es requisito para:</h3>
+                <ul id="required-list"></ul>
+            </div>
+            <button id="close-info">Cerrar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
